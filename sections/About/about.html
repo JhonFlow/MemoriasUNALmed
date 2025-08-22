@@ -1,0 +1,172 @@
+<section>
+  <div>
+    <div class="sidebar">
+      <!-- MODELOS PREDETERMINADOS -->
+      <div class="category">
+        <br />
+        <h3>¿Qué es Memorias UNAL-Med?</h3>
+        <div>
+          <p>
+            Memorias UNAL-Med es un proyecto que busca recopilar y preservar
+            algunas memorias de la cotidianidad de la comunidad universitaria.
+            Se busca solucionar la ausencia de una plataforma centralizada que
+            conserve y difunda las memorias, historias y procesos históricos del
+            campus El Volador de la Universidad Nacional de Colombia, sede
+            Medellín. Actualmente, la documentación —fotos, relatos y otros
+            archivos— se encuentra dispersa en redes sociales y bases
+            bibliográficas, sin una organización que relacione estos contenidos
+            con los espacios y objetos cotidianos del campus. El objetivo es
+            desarrollar una página web que permita a cualquier persona acceder a
+            recuerdos y relatos de la comunidad académica, vinculados a los
+            objetos y arquitecturas del campus. Para ello, se recopilará y
+            clasificará información en categorías como “lugares-edificios” y
+            “objetos con historia”, se diseñará y publicará un sitio web con al
+            menos tres elementos representativos, y se presentará un prototipo
+            para recibir retroalimentación.
+          </p>
+        </div>
+        <div>
+          <div>
+            <h4>¿Cuál es el problema o necesidad que el proyecto resolverá?</h4>
+            <p>
+              Las historias, procesos históricos, recuerdos de personas que ya
+              no están en la universidad no tienen una plataforma clara donde
+              puedan encontrarse y usarse como referente o para entender las
+              transformaciones del campus universitario y las personas que lo
+              habitan. La documentación, fotos y demás archivos están
+              desordenados por diferentes redes sociales y bases bibliográficas;
+              además, no tienen una relación respecto a los elementos con los
+              que interactúan las personas de la comunidad universitaria en la
+              cotidianidad.
+            </p>
+          </div>
+          <div>
+            <h4>Universidad Nacional de Colombia sede Medellín</h4>
+            <p>Institución pública con más de 150 años de experiencia</p>
+
+            <h2>Objetivo General</h2>
+            <p>
+              Desarrollar una página web donde cualquier persona pueda acceder a
+              memorias, historias de la comunidad académica, contadas desde los
+              objetos y las arquitecturas del campus El Volador de la
+              Universidad Nacional de Colombia, sede Medellín.
+            </p>
+
+            <h2>Objetivos Específicos</h2>
+            <ol>
+              <li>
+                Recopilar información, fotos o relatos relacionados con objetos,
+                espacios o experiencias significativas dentro del campus.
+              </li>
+              <li>
+                Clasificar el contenido en al menos 2 categorías (por ejemplo:
+                "lugares-edificios del campus" y "objetos con historia").
+              </li>
+              <li>
+                Diseñar y publicar una página web sencilla donde se pueda
+                consultar información de al menos 3 elementos del campus, que
+                rememoren eventos y momentos de la comunidad universitaria, de
+                la UNAL sede Medellín.
+              </li>
+              <li>
+                Presentar el prototipo web a otros compañeros o docentes del
+                curso para recibir retroalimentación.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botones dinamicos gráficas -->    
+    <p class="d-inline-flex gap-1">
+      <a style="background-color: #EEEEEE; color: #333333;"
+        class="btn btn-primary"
+        data-bs-toggle="collapse"
+        href="#multiCollapseExample1"
+        role="button"
+        aria-expanded="false"
+        aria-controls="multiCollapseExample1"
+        >¿Cuánto porcentaje del campus el volador ha sido escaneado?</a
+      >
+      <button style="background-color: #EEEEEE; color: #333333;"
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#multiCollapseExample2"
+        aria-expanded="false"
+        aria-controls="multiCollapseExample2"
+      >
+        ¿Qué materiales predominan en las edificaciones del campus?
+      </button>
+      <button style="background-color: #EEEEEE; color: #333333;"
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#multiCollapseExample3"
+        aria-expanded="false"
+        aria-controls="multiCollapseExample3"
+      >
+        ¿Cuántos años se demorará el proyecto si el equipo no aumenta de
+      integrantes?
+      </button>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body">
+            <img
+              src="/sections/About/graficas/TortaEscaneados.jpeg"
+              alt="Avance del proyecto" 
+              class="img-grafica"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body">
+            <img
+              src="/sections/About/graficas/Materialidades.jpeg"
+              alt="Materialidades del campus" 
+              class="img-grafica"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample3">
+          <div class="card card-body">
+            <img
+              src="/sections/About/graficas/TablaAños.jpeg"
+              alt="Duración del proyecto" 
+              class="img-grafica"
+            />
+          </div>
+        </div>
+      </div>
+    </div>    
+    <br>
+    <!-- PANEL DE INFORMACIÓN -->
+    <div class="info-panel fade-in">
+      <h3 id="model-title">Contribuciones</h3>
+      <p>
+        Si deseas contribuir con escaneos de los espacios universitarios y
+        elementos representativos para nuestra memoria, para ayudar a completar
+        el registro de modelos 3D, puedes agregrar el contenido aquí:
+      </p>
+      <p id="model-description"></p>
+    </div>
+
+    <div class="file-input-container">
+      <input
+        type="file"
+        id="model-file"
+        class="file-input"
+        accept=".obj,.glb,.gltf,.usdz"
+      />      
+    </div>
+    <br />
+    <div>Admitimos: .obj, .glb, .gltf, .usdz</div>
+  </div>
+</section>
