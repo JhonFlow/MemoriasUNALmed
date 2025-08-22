@@ -1,3 +1,8 @@
+const isGithubPages = window.location.hostname.includes("github.io");
+const basePath = isGithubPages
+  ? "/MemoriasUNALmed/sections/"
+  : "sections/";
+
 const routes = {
   home: {
     path: "home",
@@ -25,8 +30,8 @@ export function loadRoute() {
     return;
   }
 
-  const htmlPath = `sections/${route.path}/${route.path}.html`;
-  const cssPath = `sections/${route.path}/${route.path}.css`;
+  const htmlPath = `${basePath}${route.path}/${route.path}.html`;
+  const cssPath = `${basePath}${route.path}/${route.path}.css`;
 
   fetch(htmlPath)
     .then((res) => res.text())
@@ -43,3 +48,4 @@ export function loadRoute() {
       document.head.appendChild(link);
     });
 }
+
